@@ -1,0 +1,288 @@
+html {
+  height: 100%;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: F9FAFB;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+/* for documentation only */
+.dashui-container-navbar {
+  position: sticky;
+  top: 0;
+  height: 8vh;
+  font-family: sans-serif;
+  background-color: white;
+  border-bottom: 3px solid black;
+  z-index: 1;
+}
+.dashui-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 1rem;
+}
+.dashui-navbar h1 {
+  margin: 0;
+  display: inline-block;
+  z-index: 1;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.dashui-container-desktop-menu ul {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dashui-container-desktop-menu ul li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.dashui-nav-icon {
+  height: 1.5rem;
+}
+.dashui-container-sidebar {
+  position: fixed;
+  left: 0;
+  top: 8vh;
+  width: 15vw;
+  height: 92vh;
+  border-right: 3px solid black;
+  background-color: white;
+}
+.dashui-container-documentation {
+  margin-left: 15vw;
+  padding: 1rem;
+}
+.dashui-heading-component {
+  font-size: 2rem;
+}
+.dashui-description-component {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.dashui-container-component {
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+/* components */
+
+/* alert */
+.alert {
+  border-radius: 0.3em;
+  padding: 1em;
+  font-weight: 500;
+}
+.alert-primary {
+  background: #bae6fd;
+  color: #075985;
+}
+.alert-secondary {
+  background: #e4e4e7;
+  color: #27272a;
+}
+.alert-success {
+  background: #bbf7d0;
+  color: #166534;
+}
+.alert-error {
+  background: #fecaca;
+  color: #991b1b;
+}
+.alert-warning {
+  background: #fef08a;
+  color: #854d0e;
+}
+
+/* avatar */
+.avatar {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: gray;
+  overflow: hidden;
+}
+.avatar > img {
+  width: 100%;
+  height: auto;
+}
+
+/* badge */
+.badge {
+  border: none;
+  border-radius: 0.5em;
+  background-color: black;
+  color: white;
+  padding: 0.3em 0.5em;
+}
+.badge-avatar {
+  position: absolute;
+  top: -0.3em;
+  right: -1em;
+}
+.avatar {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: gray;
+  overflow: inherit;
+}
+.avatar > img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.icon {
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  width: 2em;
+  height: 2em;
+  font-size: 2em;
+}
+.badge-icon {
+  font-size: 0.4em;
+  z-index: 1;
+  position: absolute;
+  top: -0.2em;
+  right: -0.5em;
+}
+
+/* button */
+.button {
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+}
+.button-primary {
+  background: #0369a1;
+  color: #f0f9ff;
+}
+.button-secondary {
+  background: #3f3f46;
+  color: #f4f4f5;
+}
+.button-success {
+  background: #166534;
+  color: #f0fdf4;
+}
+.button-error {
+  background: #dc2626;
+  color: #fef2f2;
+}
+.button-warning {
+  background: #facc15;
+  color: #854d0e;
+}
+
+/* floating-action-button */
+.floating-action {
+  /* position: fixed; */
+  bottom: 5%;
+  right: 3.5%;
+
+  border: none;
+  background: red;
+  color: white;
+  box-shadow: 0px 0px 10px red;
+
+  font-size: 3em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 5em;
+}
+
+/* card */
+.card {
+  background-color: white;
+  width: 15rem;
+  height: 22rem;
+  border: 1px black solid;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 15rem;
+}
+
+.card-details {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-heading {
+  text-align: center;
+  width: 90%;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-subheading {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-container-button {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 0.3rem;
+}
+
+.card-button-secondary {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  position: absolute;
+  left: 2%;
+}
+
+.card-button-primary {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  background: transparent;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+  position: absolute;
+  right: 7%;
+}
+
+.card-icon-cart {
+  display: inline;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  height: 1rem;
+}
