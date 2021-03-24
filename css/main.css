@@ -223,11 +223,9 @@ body {
   margin: 1rem;
   overflow: hidden;
 }
-
 .card-image {
   height: 15rem;
 }
-
 .card-details {
   height: 100%;
   width: 100%;
@@ -236,7 +234,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .card-heading {
   text-align: center;
   width: 90%;
@@ -245,12 +242,10 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .card-subheading {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-
 .card-container-button {
   width: 100%;
   height: 40%;
@@ -258,7 +253,6 @@ body {
   bottom: 0;
   padding-bottom: 0.3rem;
 }
-
 .card-button-secondary {
   cursor: pointer;
   border: none;
@@ -267,7 +261,6 @@ body {
   position: absolute;
   left: 2%;
 }
-
 .card-button-primary {
   cursor: pointer;
   border: 2px solid black;
@@ -279,10 +272,131 @@ body {
   position: absolute;
   right: 7%;
 }
-
 .card-icon-cart {
   display: inline;
   padding-right: 0.5rem;
   padding-top: 0.5rem;
   height: 1rem;
+}
+
+/* top-navbar */
+/* .container-top-navbar {
+  position: sticky;
+  top: 0;
+  height: 8vh;
+  font-family: sans-serif;
+  background-color: white;
+}
+
+.top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.top-navbar h1 {
+  margin: 0;
+  display: inline-block;
+  z-index: 1;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.top-navbar-container-desktop-menu ul {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.top-navbar-container-desktop-menu ul li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 567px) {
+  .top-navbar-container-desktop-menu {
+    display: inline-block;
+  }
+
+  .top-navbar h1 {
+    font-size: 1.5rem;
+  }
+
+  .top-navbar-container-desktop-menu ul {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .top-navbar-container-desktop-menu li {
+    display: inline-block;
+    margin: 0;
+  }
+} */
+
+.container-navbar {
+  position: sticky;
+  top: 0;
+  height: 8vh;
+  font-family: sans-serif;
+  background-color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.navbar h1 {
+  margin: 0;
+  display: inline-block;
+  z-index: 1;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.container-desktop-menu ul {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container-desktop-menu ul li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 567px) {
+  .container-desktop-menu {
+    display: inline-block;
+  }
+
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+
+  .container-desktop-menu ul {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .container-desktop-menu li {
+    display: inline-block;
+    margin: 0;
+  }
 }
