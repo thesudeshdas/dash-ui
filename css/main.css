@@ -400,3 +400,10 @@ body {
     margin: 0;
   }
 }
+
+.container-card {
+  padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
