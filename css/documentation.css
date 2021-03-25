@@ -101,17 +101,38 @@ body {
   font-family: var(--lato);
 }
 
-.dashui-sidenav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.dashui-sidenav ul li {
+.dashui-side-dropdown {
   margin: 0.5rem 0;
+  padding: 0;
+
+  border: none;
+
+  cursor: pointer;
+  outline: none;
+
+  background-color: transparent;
+  color: var(--text-primary);
+
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: var(--lato);
 }
 
-.dashui-sidenav ul a {
+.dashui-side-dropdown-active {
+  border-bottom: 1px solid var(--text-primary);
+  color: var(--text-primary);
+}
+
+.dashui-container-dropdown {
+  display: none;
+
+  flex-direction: column;
+
+  background-color: #262626;
+  padding-left: 1rem;
+}
+
+.dashui-sidenav a {
   color: var(--text-primary);
 
   text-decoration: none;

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/documentation.css">
   <link rel="stylesheet" href="css/components.css">
+
   <title>Dash UI</title>
 </head>
 
@@ -39,12 +40,24 @@
 
     <!-- side-navigation -->
     <nav class="dashui-sidenav">
-      <ul>
-        <li> <a href="#alert">Alert</a> </li>
-        <li> <a href="#avatar">Avatar</a> </li>
-        <li> <a href="#badge">Badge</a> </li>
-        <li> <a href="#button">Button</a> </li>
-      </ul>
+      <div>
+        <button class="dashui-side-dropdown dashui-side-dropdown-active">Components</button>
+        <div class="dashui-container-dropdown" style="display: flex;">
+          <a href="#alert">Alert</a>
+          <a href="#avatar">Avatar</a>
+          <a href="#badge">Badge</a>
+          <a href="#button">Button</a>
+        </div>
+
+        <button class="dashui-side-dropdown">Typography</button>
+        <div class="dashui-container-dropdown">
+          <a href="#alert">Alert</a>
+          <a href="#avatar">Avatar</a>
+          <a href="#badge">Badge</a>
+          <a href="#button">Button</a>
+        </div>
+
+      </div>
     </nav>
 
 
@@ -228,6 +241,7 @@
 
 
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
