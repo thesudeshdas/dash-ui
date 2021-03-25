@@ -8,8 +8,29 @@
 
   --theme-primary: #262626;
   --theme-secondary: #404040;
+  --bg-primary: #262626;
+  --bg-alternate: #f5f5f5;
+  --text-primary: #fafafa;
+  --text-alternate: #171717;
 
-  --text-primary: #f5f5f5;
+  --space-xs: 0.25rem;
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 2rem;
+  --space-xl: 5rem;
+  --space-custom-10x: 10rem;
+
+  --font-xs: 0.5rem;
+  --font-s: 0.75rem;
+  --font-m: 1rem;
+  --font-ml: 1.2rem;
+  --font-l: 1.5rem;
+  --font-xl: 2rem;
+  --font-xxl: 2.5rem;
+
+  --line-thin: 0.063rem;
+  --line-medium: 0.125rem;
+  --line-thick: 0.188rem;
 }
 
 html {
@@ -17,7 +38,7 @@ html {
 
   scroll-behavior: smooth;
 
-  background-color: var(--theme-primary);
+  background-color: var(--bg-primary);
   color: var(--text-primary);
 
   font-family: var(--roboto);
@@ -27,13 +48,15 @@ body {
   margin: 0;
 
   width: 100%;
+
+  color: var(--text-primary);
 }
 
 /* top navigation bar */
 .dashui-top-navbar {
   height: 8vh;
   width: 97.5%;
-  padding: 0.5rem 1rem;
+  padding: var(--space-s) var(--space-m);
 
   position: sticky;
   top: 0;
@@ -51,14 +74,14 @@ body {
   margin: 0;
 
   font-family: var(--ubuntu);
-  font-size: 2rem;
+  font-size: var(--font-xl);
 }
 
 .dashui-top-navbar h2 {
   margin: 0;
 
   font-family: var(--lato);
-  font-size: 1.2rem;
+  font-size: var(--font-ml);
 }
 
 .dashui-top-navbar ul {
@@ -69,7 +92,7 @@ body {
 }
 
 .dashui-top-navbar li {
-  margin: 1rem;
+  margin: var(--space-m);
   list-style: none;
 }
 
@@ -89,20 +112,20 @@ body {
 .dashui-sidenav {
   width: 15%;
   height: 84.5vh;
-  padding: 1rem;
+  padding: var(--space-m);
 
   position: sticky;
   left: 0;
   top: 10.5vh;
 
-  border-right: 2px solid var(--text-primary);
+  border-right: var(--line-medium) solid var(--text-primary);
 
-  font-size: 1.1rem;
+  font-size: var(--font-ml);
   font-family: var(--lato);
 }
 
 .dashui-side-dropdown {
-  margin: 0.5rem 0;
+  margin: var(--space-s) 0;
   padding: 0;
 
   border: none;
@@ -114,12 +137,12 @@ body {
   color: var(--text-primary);
 
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: var(--font-ml);
   font-family: var(--lato);
 }
 
 .dashui-side-dropdown-active {
-  border-bottom: 1px solid var(--text-primary);
+  border-bottom: var(--line-thin) solid var(--text-primary);
   color: var(--text-primary);
 }
 
@@ -128,8 +151,8 @@ body {
 
   flex-direction: column;
 
-  background-color: #262626;
-  padding-left: 1rem;
+  background-color: var(--bg-primary);
+  padding-left: var(--space-m);
 }
 
 .dashui-sidenav a {
@@ -142,7 +165,7 @@ body {
 /* main section */
 main {
   width: 85%;
-  padding: 2rem;
+  padding: var(--space-l);
 }
 
 main section {
@@ -152,7 +175,7 @@ main section {
 .dashui-heading-component {
   margin: 0;
 
-  font-size: 2rem;
+  font-size: var(--font-xl);
   font-family: var(--ubuntu);
 }
 
@@ -162,11 +185,11 @@ main section {
 }
 
 .dashui-container-component {
-  padding: 1rem;
+  padding: var(--space-l);
 
   display: flex;
 
-  border: 1px solid white;
+  border: var(--line-thin) solid var(--text-primary);
   border-radius: 0.3rem;
 }
 
@@ -174,14 +197,8 @@ main section {
 /* alert */
 #container-alert {
   height: 300px;
-  padding: 1rem 10rem;
+  padding: var(--space-m) var(--space-custom-10x);
 
   flex-direction: column;
-  justify-content: space-around;
-}
-
-/* button */
-#container-button {
-  background-color: lightgrey;
   justify-content: space-around;
 }
