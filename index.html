@@ -5,198 +5,87 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="css/documentation.css">
+  <link rel="stylesheet" href="css/components.css">
   <title>Dash UI</title>
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
 </head>
 
 <body>
-  <!-- top navigation -->
-  <div class="dashui-container-navbar">
-    <nav class="dashui-navbar">
-      <h1>Dash UI</h1>
-      <div class="dashui-container-desktop-menu">
-        <ul>
-          <li>
-            <img class="dashui-nav-icon" src="https://api.iconify.design/mdi:github.svg" />
-          </li>
-          <li>
-            <img class="dashui-nav-icon" src="https://api.iconify.design/mdi:twitter.svg" />
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+  <!-- top-navigation-bar -->
+  <nav class="dashui-top-navbar">
+    <ul class="dashui-container-navigation">
+      <li><a>
+          <h1>Dash UI</h1>
+        </a> </li>
+      <li><a>
+          <h2>Home</h2>
+        </a>
+      </li>
+      <li><a>
+          <h2>Docs</h2>
+        </a>
 
-  <!-- side navigation -->
-  <div class="dashui-container-sidebar">
-    <ul>
-      <li>Alert</li>
+      </li>
     </ul>
-  </div>
 
-  <!-- components -->
-  <div class="dashui-container-documentation">
-    <!-- alert -->
-    <section id='alert'>
-      <h1 class="dashui-heading-component">Alert</h1>
-      <div class="dashui-description-component">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
-        praesentium quibusdam vitae iusto officiis cum ducimus culpa reiciendis quaerat at, aliquid voluptas non dolores
-        ad maxime quasi consequatur soluta perspiciatis!</div>
+    <ul>
+      <li><a href='https://twitter.com/thesudeshdas' target="blank">Twitter</a></li>
+      <li><a href='https://github.com/thesudeshdas' target="blank">Github</a></li>
+    </ul>
+  </nav>
 
-      <div class="dashui-container-component">
-        <div class="alert alert-primary">
-          This is a primary alert element !
-        </div>
+  <!-- doc site -->
+  <div class="dashui-docsite">
 
-        <div class="alert alert-secondary">
-          This is a secondary alert element !
-        </div>
-
-        <div class="alert alert-success">
-          This is a success alert element !
-        </div>
-
-        <div class="alert alert-error">
-          This is a error alert element !
-        </div>
-
-        <div class="alert alert-warning">
-          This is a warning alert element !
-        </div>
-      </div>
+    <!-- side-navigation -->
+    <nav class="dashui-sidenav">
+      <ul>
+        <li> <a href="#alert">Alert</a> </li>
+      </ul>
+    </nav>
 
 
+    <!-- main components -->
+    <main>
 
-    </section>
+      <!-- alert -->
+      <section id="alert">
+        <h1 class="dashui-heading-component">Alert</h1>
+        <hr>
+        <p>Alerts are used to give the user a confirmation of the action performed by them.</p>
 
-    <!-- avatar -->
-    <section id='avatar'>
-      <h1 class="dashui-heading-component">Avatar</h1>
-      <div class="dashui-description-component">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
-        praesentium quibusdam vitae iusto officiis cum ducimus culpa reiciendis quaerat at, aliquid voluptas non dolores
-        ad maxime quasi consequatur soluta perspiciatis!</div>
+        <div class="dashui-container-component" id="container-alert">
+          <div class="alert alert-primary">
+            This is a primary alert element
+          </div>
 
-      <div class="dashui-container-component">
-        <div class="avatar">
-          <img src="https://via.placeholder.com/150" alt="avatar" />
-        </div>
-      </div>
-    </section>
+          <div class="alert alert-secondary">
+            This is a secondary alert element
+          </div>
 
-    <!-- badge -->
-    <section id='badge'>
-      <h1 class="dashui-heading-component">Badge</h1>
-      <div class="dashui-description-component">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
-        praesentium quibusdam vitae iusto officiis cum ducimus culpa reiciendis quaerat at, aliquid voluptas non dolores
-        ad maxime quasi consequatur soluta perspiciatis!</div>
+          <div class="alert alert-success">
+            This is a success alert element
+          </div>
 
-      <div class="dashui-container-component">
-        <span class="badge">New</span>
-        <div class="avatar">
-          <img src="https://via.placeholder.com/150" alt="avatar" />
-          <span class="badge badge-avatar">New</span>
-        </div>
-        <button class="icon">+<span class="badge badge-icon">1</span></button>
-      </div>
+          <div class="alert alert-error">
+            This is a error alert element
+          </div>
 
-
-    </section>
-
-    <!-- button -->
-    <section id='button'>
-      <h1 class="dashui-heading-component">Button</h1>
-      <div class="dashui-description-component">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
-        praesentium quibusdam vitae iusto officiis cum ducimus culpa reiciendis quaerat at, aliquid voluptas non dolores
-        ad maxime quasi consequatur soluta perspiciatis!</div>
-
-      <div class="dashui-container-component">
-        <button class="button button-primary">Primary</button>
-        <button class="button button-secondary">Secondary</button>
-        <button class="button button-success">Success</button>
-        <button class="button button-error">Error</button>
-        <button class="button button-warning">Warning</button>
-      </div>
-    </section>
-
-    <!-- floating action button -->
-    <section id='floating-action-button'>
-      <h1 class="dashui-heading-component">Floating Action Button</h1>
-      <div class="dashui-description-component">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
-        praesentium quibusdam vitae iusto officiis cum ducimus culpa reiciendis quaerat at, aliquid voluptas non dolores
-        ad maxime quasi consequatur soluta perspiciatis!</div>
-
-      <div class="dashui-container-component">
-        <button class="floating-action">+</button>
-      </div>
-    </section>
-
-    <!-- card -->
-    <section id='card'>
-      <h1 class="dashui-heading-component">Card</h1>
-      <div class="dashui-description-component">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
-        praesentium quibusdam vitae iusto officiis cum ducimus culpa reiciendis quaerat at, aliquid voluptas non dolores
-        ad maxime quasi consequatur soluta perspiciatis!</div>
-
-      <div class="dashui-container-component">
-        <div class="card">
-          <img class="card-image"
-            src='https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80'
-            alt="card" />
-          <div class="card-details">
-            <div class="card-heading">Card Heading</div>
-            <div class="card-subheading">Rs. 150</div>
-            <div class="card-container-button">
-              <button class="card-button-secondary">
-                <img src='https://api.iconify.design/mdi:heart.svg' />
-              </button>
-              <button class="card-button-primary">
-                <div class="card-icon-cart">
-                  <img src='https://api.iconify.design/mdi:heart.svg' />
-                </div>
-                Add to cart
-              </button>
-            </div>
+          <div class="alert alert-warning">
+            This is a warning alert element
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- top-nav-bar -->
-    <section id='top-nav-bar'>
-      <h1 class="dashui-heading-component">Card</h1>
-      <div class="dashui-description-component">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
-        praesentium quibusdam vitae iusto officiis cum ducimus culpa reiciendis quaerat at, aliquid voluptas non dolores
-        ad maxime quasi consequatur soluta perspiciatis!</div>
+        <h2 class="dashui-heading-usage">Usage</h2>
+        <p>Copy paste the code below, and you are good to go</p>
 
-      <div class="dashui-container-component">
-        <div className="container-navbar">
-          <nav className="navbar">
-            <h1>DashCart</h1>
-            <div className="container-desktop-menu">
-              <ul>
-                <li>Products</li>
-                <li>
-                  Wishes
-                </li>
-                <li>
-                  Product
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%2838%2C38%2C38%2C1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=26px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2509This%2520is%2520a%2520primary%2520alert%2520element%2520%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%250A%2509This%2520is%2520a%2520secondary%2520alert%2520element%2520%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2509This%2520is%2520a%2520success%2520alert%2520element%2520%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%250A%2509This%2520is%2520a%2520error%2520alert%2520element%2520%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2509This%2520is%2520a%2520warning%2520alert%2520element%2520%250A%253C%252Fdiv%253E"
+          style="width: 470px; height: 468px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </section>
+    </main>
 
 
 
@@ -205,13 +94,6 @@
 
 
   </div>
-
-
-
-
-
-
-
 </body>
 
 </html>
