@@ -317,6 +317,7 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
   font-size: var(--font-ml);
   font-family: var(--ubuntu);
   font-weight: bolder;
