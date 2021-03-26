@@ -219,6 +219,7 @@ body {
 }
 
 .card-product-container-image {
+  position: relative;
   width: 40vw;
   background: var(--bg-alternate);
 }
@@ -231,7 +232,7 @@ body {
 .card-product-wishlist {
   position: absolute;
   bottom: 0;
-  left: 31vw;
+  right: 5%;
   color: var(--custom-heart);
   font-size: var(--font-ml);
 }
@@ -374,7 +375,6 @@ body {
 
   .card-product-wishlist {
     display: none;
-    left: 30vh;
     font-size: var(--font-l);
   }
 
