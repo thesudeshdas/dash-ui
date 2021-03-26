@@ -311,9 +311,16 @@ body {
   cursor: pointer;
 }
 
-.top-navbar-brand {
-  font-size: var(--font-ml);
+.top-navbar-button-brand {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
+  font-size: var(--font-ml);
+  font-family: var(--ubuntu);
+  font-weight: bolder;
+  color: var(--text-primary);
 }
 
 .spacer {
@@ -410,9 +417,9 @@ body {
     display: none;
   }
 
-  .top-navbar-brand {
-    font-size: var(--font-l);
+  .top-navbar-button-brand {
     margin: var(--space-m);
+    font-size: var(--font-l);
   }
 
   .top-navbar-icon {
