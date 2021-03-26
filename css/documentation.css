@@ -127,6 +127,12 @@ body {
   font-family: var(--lato);
 }
 
+.dashui-sidenav-container-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .dashui-side-dropdown {
   margin: var(--space-s) 0;
   padding: 0;
