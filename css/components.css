@@ -198,7 +198,6 @@ body {
   background-color: transparent;
   color: var(--theme-primary);
   font-size: var(--font-l);
-  transform: translateY(25%);
 }
 
 /* --------------------------------------------------------------------------------------------------------------
@@ -289,6 +288,47 @@ body {
 
 /* --------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------- */
+/* top-navbar */
+.top-navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--theme-secondary);
+}
+
+.top-navbar-mobile-menu {
+  display: block;
+  margin: var(--space-s);
+  font-size: var(--font-l);
+  transform: translateY(10%);
+  cursor: pointer;
+}
+
+.top-navbar-brand {
+  font-size: var(--font-ml);
+  cursor: pointer;
+}
+
+.spacer {
+  width: 100%;
+}
+
+.top-navbar-actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-navbar-icon {
+  margin: var(--space-xs);
+  color: var(--text-primary);
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------- */
 /* reponsiveness */
 @media (min-width: 768px) {
   /* button */
@@ -300,7 +340,6 @@ body {
   .button-icon {
     padding: 0;
     font-size: var(--font-xl);
-    transform: translateY(30%);
   }
 
   /* card */
@@ -356,5 +395,24 @@ body {
 
   .card-product-description:hover .card-product-primary-button {
     display: block;
+  }
+
+  /* rating */
+  .rating {
+    font-size: var(--font-ml);
+  }
+
+  /* top-navbar */
+  .top-navbar-mobile-menu {
+    display: none;
+  }
+
+  .top-navbar-brand {
+    font-size: var(--font-l);
+    margin: var(--space-m);
+  }
+
+  .top-navbar-icon {
+    margin: var(--space-s) var(--space-m) var(--space-s) 0;
   }
 }
