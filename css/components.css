@@ -189,6 +189,18 @@ body {
   color: var(--theme-secondary);
 }
 
+.button-icon {
+  padding: 0;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-primary);
+  color: var(--theme-primary);
+  font-size: var(--font-l);
+  transform: translateY(25%);
+}
+
 /* --------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------- */
 /* card */
@@ -283,6 +295,12 @@ body {
   .button {
     padding: var(--space-s) var(--space-m);
     font-size: var(--font-m);
+  }
+
+  .button-icon {
+    padding: 0;
+    font-size: var(--font-xl);
+    transform: translateY(30%);
   }
 
   /* card */
