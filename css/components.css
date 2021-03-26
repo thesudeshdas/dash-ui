@@ -32,6 +32,8 @@
   --line-thin: 0.063rem;
   --line-medium: 0.125rem;
   --line-thick: 0.188rem;
+
+  --z-10: 10;
 }
 
 html {
@@ -298,6 +300,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   background-color: var(--theme-secondary);
+  z-index: var(--z-10);
 }
 
 .top-navbar-mobile-menu {
