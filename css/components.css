@@ -374,7 +374,7 @@ body {
 
   .card-product-wishlist {
     display: none;
-    left: 28vh;
+    left: 30vh;
     font-size: var(--font-l);
   }
 
