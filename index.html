@@ -22,7 +22,7 @@
           <h2>Home</h2>
         </a>
       </li>
-      <li><a>
+      <li><a href="#docsite">
           <h2>Docs</h2>
         </a>
 
@@ -36,7 +36,7 @@
   </nav>
 
   <!-- doc site -->
-  <div class="dashui-docsite">
+  <div id="docsite" class="dashui-docsite">
 
     <!-- side-navigation -->
     <nav class="dashui-sidenav">
@@ -47,11 +47,12 @@
           <a href="#avatar">Avatar</a>
           <a href="#badge">Badge</a>
           <a href="#button">Button</a>
+          <a href="#card">Card</a>
         </div>
 
-        <button class="dashui-side-dropdown">Typography</button>
+        <button class="dashui-side-dropdown">Utilities</button>
         <div class="dashui-container-dropdown">
-          <a href="#alert">Alert</a>
+          <a href="#icons">Icons</a>
           <a href="#avatar">Avatar</a>
           <a href="#badge">Badge</a>
           <a href="#button">Button</a>
@@ -92,7 +93,7 @@
           </div>
         </div>
 
-        <h2 class="dashui-heading-usage">Usage</h2>
+        <h2 class="dashui-heading-subheading">Usage</h2>
         <p>Copy paste the code below, and you are good to go</p>
 
         <p class="codepen" data-height="429" data-theme-id="dark" data-default-tab="html" data-user="ss7sudesh"
@@ -123,7 +124,7 @@
           </div>
         </div>
 
-        <h2 class="dashui-heading-usage">Usage</h2>
+        <h2 class="dashui-heading-subheading">Usage</h2>
         <p>Copy paste the code below, and you are good to go</p>
 
         <p class="codepen" data-height="244" data-theme-id="dark" data-default-tab="html" data-user="ss7sudesh"
@@ -158,7 +159,7 @@
           </div>
         </div>
 
-        <h2 class="dashui-heading-usage">Usage</h2>
+        <h2 class="dashui-heading-subheading">Usage</h2>
         <p>Copy paste the code below, and you are good to go. Make sure to absolutely position the badge and relatively
           position the element to be badged on.</p>
 
@@ -195,7 +196,7 @@
           </button>
         </div>
 
-        <h2 class="dashui-heading-usage">Usage</h2>
+        <h2 class="dashui-heading-subheading">Usage</h2>
         <p>Copy paste the code below, and you are good to go. The buttons take the color from the root element. Make
           sure you have used the same variable names.</p>
 
@@ -208,13 +209,62 @@
             on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
 
 
       </section>
 
+      <!-- card -->
+      <section id="card">
+        <h1 class="dashui-heading-component">Card</h1>
+        <hr>
+        <p>Card is generally used to showcase multiple items of similar nature or a list of items in a graphical manner.
+          They differ in use cases. Some of the following are below (e-commerce), I'll be adding more cards as I
+          progress in creating more projects.
+        </p>
+
+        <h2 class="dashui-heading-subheading">Basic Card</h2>
+        <p>The basic card is just a box, use this in addition to other types of card to get the best out of it.</p>
+
+        <div class="dashui-container-component" id="container-card">
+          <div class="card"></div>
+        </div>
+
+        <h2 class="dashui-heading-subheading">Usage</h2>
+        <p>Copy paste the code below, and you are good to go. The buttons take the color from the root element. Make
+          sure you have used the same variable names.</p>
+
+        <p class="codepen" data-height="132" data-theme-id="dark" data-default-tab="html" data-user="ss7sudesh"
+          data-slug-hash="vYgLQMm" data-preview="true"
+          style="height: 132px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+          data-pen-title="Card Component">
+          <span>See the Pen <a href="https://codepen.io/ss7sudesh/pen/vYgLQMm">
+              Card Component</a> by Sudesh Kumar Das (<a href="https://codepen.io/ss7sudesh">@ss7sudesh</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+        <h2 class="dashui-heading-subheading">Horizontal Product Card</h2>
+        <p>Use the horizontal version of the product card to provide details of a product</p>
+
+        <iframe
+          src="https://codesandbox.io/embed/product-card-horizontal-72m34?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fcomponents%2FProductCardHorizontal.js&theme=dark"
+          style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+          title="Product Card Horizontal"
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>
+
+        <h2 class="dashui-heading-subheading">Usage</h2>
+        <p>Go to ProductCardHorizontal.js in the components folder. Copy paste the whole file to your project. Make sure
+          you have the same icons as in the icons.js in the assets folder. <a href="#icons">Read how to use icons</a>
+        </p>
+
+
+
+
+
+      </section>
 
 
 

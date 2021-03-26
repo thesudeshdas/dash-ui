@@ -164,20 +164,20 @@ body {
 ---------------------------------------------------------------------------------------------------------------- */
 /* button */
 .button {
-  padding: var(--space-s) var(--space-m);
+  padding: var(--space-xs) var(--space-s);
 
   border-radius: 0.3rem;
   outline: none;
   cursor: pointer;
 
-  font-size: var(--font-ml);
+  font-size: var(--font-s);
   font-weight: bold;
   font-family: var(--lato);
 }
 
 .button-primary {
   background-color: var(--theme-primary);
-  color: var(--text-primary);
+  color: var(--text-secondary);
   border: var(--line-medium) solid var(--theme-primary);
 }
 
@@ -185,4 +185,139 @@ body {
   border: var(--line-medium) solid var(--theme-secondary);
   background-color: var(--bg-primary);
   color: var(--theme-secondary);
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------- */
+/* card */
+.card {
+  height: 40vw;
+  border: var(--line-thin) solid var(--bg-alternate);
+}
+
+/* card-product-horizontal */
+.card-product-horizontal {
+  width: 99%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-product-image {
+  height: 100%;
+  max-width: 40vw;
+}
+
+.card-product-wishlist {
+  position: absolute;
+  bottom: 0;
+  left: 31vw;
+  color: var(--custom-heart);
+  font-size: var(--font-ml);
+}
+
+.card-product-description {
+  width: 100%;
+  padding: var(--space-s);
+}
+
+.card-product-name {
+  font-size: var(--font-m);
+}
+
+.card-product-rating {
+  margin-left: -0.25rem;
+}
+
+.card-product-container-price {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.card-product-discounted-price {
+  font-size: var(--font-m);
+}
+
+.card-product-original-price {
+  margin: var(--space-s);
+  font-size: var(--font-s);
+  text-decoration: line-through;
+}
+
+.card-product-discount {
+  font-size: var(--font-s);
+}
+
+.cart-product-primary-button-icon {
+  display: inline-block;
+  margin-right: var(--space-xs);
+  transform: translateY(10%);
+}
+
+.card-product-primary-button {
+  position: absolute;
+  bottom: var(--space-s);
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------- */
+/* reponsiveness */
+@media (min-width: 768px) {
+  /* button */
+  .button {
+    padding: var(--space-s) var(--space-m);
+    font-size: var(--font-m);
+  }
+
+  /* card */
+  .card {
+    height: 35vh;
+  }
+
+  /* card-product-horizontal */
+  .card {
+    height: 35vh;
+  }
+
+  .card-product-image {
+    height: 100%;
+    max-width: 35vh;
+  }
+
+  .card-product-wishlist {
+    display: none;
+    left: 28vh;
+    font-size: var(--font-l);
+  }
+
+  .card-product-wishlist:hover {
+    display: block;
+  }
+
+  .card-product-image:hover + .card-product-wishlist {
+    display: block;
+  }
+
+  .card-product-description {
+    padding: var(--space-m);
+  }
+
+  .card-product-name {
+    font-size: var(--font-ml);
+  }
+
+  .card-product-discounted-price {
+    font-size: var(--font-ml);
+  }
+
+  .card-product-primary-button {
+    display: none;
+    position: absolute;
+    bottom: var(--space-m);
+  }
+
+  .card-product-description:hover .card-product-primary-button {
+    display: block;
+  }
 }

@@ -89,6 +89,8 @@ body {
 
   display: flex;
   align-items: center;
+
+  color: var(--text-primary);
 }
 
 .dashui-top-navbar li {
@@ -175,6 +177,10 @@ main section {
   padding-top: 13vh;
 }
 
+main a {
+  color: var(--text-primary);
+}
+
 .dashui-heading-component {
   margin: 0;
 
@@ -182,7 +188,7 @@ main section {
   font-family: var(--ubuntu);
 }
 
-.dashui-heading-usage {
+.dashui-heading-subheading {
   font-size: 1.4rem;
   font-family: var(--lato);
 }
@@ -206,4 +212,9 @@ main section {
 
   flex-direction: column;
   justify-content: space-around;
+}
+
+/* card */
+.card {
+  width: 20vw;
 }
