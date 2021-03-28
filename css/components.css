@@ -171,7 +171,7 @@ body {
   padding: var(--space-xs) var(--space-s);
 
   border-radius: 0.3rem;
-  outline: none;
+
   cursor: pointer;
 
   font-size: var(--font-s);
@@ -318,7 +318,7 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  outline: none;
+
   font-size: var(--font-ml);
   font-family: var(--ubuntu);
   font-weight: bolder;
@@ -360,10 +360,6 @@ body {
   }
 
   /* card-product-horizontal */
-  .card {
-    height: 35vh;
-  }
-
   .card-product-container-image {
     width: 35vh;
   }
@@ -374,16 +370,7 @@ body {
   }
 
   .card-product-wishlist {
-    display: none;
     font-size: var(--font-l);
-  }
-
-  .card-product-wishlist:hover {
-    display: block;
-  }
-
-  .card-product-image:hover + .card-product-wishlist {
-    display: block;
   }
 
   .card-product-description {
@@ -396,16 +383,6 @@ body {
 
   .card-product-discounted-price {
     font-size: var(--font-ml);
-  }
-
-  .card-product-primary-button {
-    display: none;
-    position: absolute;
-    bottom: var(--space-m);
-  }
-
-  .card-product-description:hover .card-product-primary-button {
-    display: block;
   }
 
   /* rating */
