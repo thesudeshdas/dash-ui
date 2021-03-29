@@ -213,7 +213,7 @@ body {
 
 /* card-product-horizontal */
 .card-product-horizontal {
-  width: 99%;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
