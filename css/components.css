@@ -14,6 +14,7 @@
   --text-alternate: #171717;
   --custom-rating-gold: #f5c634;
   --custom-heart: #ef4444;
+  --custom-product-background: #f6f6f6;
 
   --space-xs: 0.25rem;
   --space-s: 0.5rem;
@@ -221,7 +222,7 @@ body {
 .card-product-container-image {
   position: relative;
   width: 40vw;
-  background: var(--bg-alternate);
+  background: var(--custom-product-background);
 }
 
 .card-product-image {
@@ -298,7 +299,7 @@ body {
 .card-cart-container-item-image {
   width: 40vw;
   height: 40vw;
-  background-color: var(--bg-alternate);
+  background-color: var(--custom-product-background);
 }
 
 .card-cart-item-image {
