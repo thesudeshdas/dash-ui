@@ -232,10 +232,11 @@ body {
 
 .card-product-wishlist {
   position: absolute;
-  bottom: 0;
-  right: 5%;
+  bottom: var(--space-s);
+  right: var(--space-xs);
   color: var(--custom-heart);
   font-size: var(--font-ml);
+  cursor: pointer;
 }
 
 .card-product-description {
@@ -280,6 +281,25 @@ body {
 .card-product-primary-button {
   position: absolute;
   bottom: var(--space-s);
+}
+
+.card-product-horizontal-container-quantity {
+  position: absolute;
+  bottom: var(--space-s);
+  border: var(--line-medium) solid var(--bg-alternate);
+  border-radius: 0.5rem;
+  width: fit-content;
+}
+
+.card-product-horizontal-quantity-action {
+  background-color: var(--bg-alternate);
+  color: var(--text-alternate);
+  /* padding: var(--space-xs); */
+}
+
+.card-product-horizontal-quantity {
+  padding: var(--space-xs) var(--space-m);
+  font-size: var(--font-s);
 }
 
 /* --------------------------------------------------------------------------------------------------------------
