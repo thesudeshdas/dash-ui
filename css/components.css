@@ -610,7 +610,12 @@ body {
   }
 
   .card-wishlist-item-delete-button {
-    font-size: var(--font-l);
+    font-size: var(--font-ml);
+    padding: var(--space-xs);
+  }
+
+  .card-wishlist-item-primary-button {
+    font-size: var(--font-m);
     padding: var(--space-xs);
   }
 
