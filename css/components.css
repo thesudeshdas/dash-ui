@@ -380,6 +380,77 @@ body {
 
 /* --------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------- */
+/* wishlist item card */
+
+.card-wishlist-item {
+  height: fit-content;
+  width: 15rem;
+  min-height: 70vw;
+  max-width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card-wishlist-item-container-image {
+  background-color: var(--custom-product-background);
+  width: 100%;
+  height: 50vw;
+  overflow: hidden;
+}
+
+.card-wishlist-image {
+  width: 100%;
+}
+
+.card-wishlist-item-description {
+  padding: var(--space-s) var(--space-xs);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-wishlist-item-container-price {
+  display: flex;
+  padding: var(--space-xs) 0 var(--space-s);
+}
+
+.wishlist-item-name {
+  font-size: var(--font-m);
+}
+
+.wishlist-item-discounted-price {
+  font-size: var(--font-s);
+  padding-right: var(--space-s);
+}
+
+.wishlist-item-original-price {
+  padding: 0 var(--space-xs);
+  font-size: var(--font-s);
+  text-decoration: line-through;
+}
+
+.wishlist-item-discount {
+  font-size: var(--font-s);
+}
+
+.card-wishlist-item-container-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-wishlist-item-primary-button {
+  align-self: center;
+}
+
+.card-wishlist-item-delete-button {
+  background-color: var(--bg-alternate);
+  font-size: var(--space-m);
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------- */
 /* rating */
 .rating {
   color: var(--custom-rating-gold);
@@ -528,6 +599,19 @@ body {
 
   .card-cart-item-delete {
     margin-left: var(--space-l);
+  }
+
+  /* wishlist item card */
+  .card-wishlist-item {
+    height: 40vh;
+    width: 25vh;
+    min-height: 10rem;
+    max-width: 45vw;
+  }
+
+  .card-wishlist-item-delete-button {
+    font-size: var(--font-l);
+    padding: var(--space-xs);
   }
 
   /* rating */
