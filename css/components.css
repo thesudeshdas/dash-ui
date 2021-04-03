@@ -416,6 +416,10 @@ body {
 }
 
 .wishlist-item-name {
+  white-space: nowrap;
+  width: 10rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: var(--font-m);
 }
 
@@ -603,8 +607,8 @@ body {
 
   /* wishlist item card */
   .card-wishlist-item {
-    height: 40vh;
-    width: 25vh;
+    height: 50vh;
+    width: 30vh;
     min-height: 10rem;
     max-width: 45vw;
   }
