@@ -151,6 +151,20 @@ body {
   border-radius: 1rem;
 }
 
+.badge-on-button-icon {
+  position: absolute;
+  top: -20%;
+  right: -50%;
+  border-radius: 50%;
+  width: var(--font-s);
+  height: var(--font-s);
+  font-size: var(--font-s);
+  padding: var(--space-xs);
+  background: var(--bg-alternate);
+  color: var(--theme-primary);
+  font-weight: bolder;
+}
+
 .avatar-badge {
   position: relative;
   height: 100px;
