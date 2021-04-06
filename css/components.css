@@ -488,6 +488,9 @@ body {
 /* sidebar-navigation */
 .sidebar-opener {
   display: flex;
+  z-index: var(--z-10);
+  width: 100%;
+  position: fixed;
 }
 
 .button-sidebar-opener {
