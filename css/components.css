@@ -501,7 +501,7 @@ body {
 }
 
 .sidebar {
-  margin-top: var(--space-m);
+  padding-top: var(--space-m);
   width: 90%;
   display: none;
   padding: var(--space-m);
